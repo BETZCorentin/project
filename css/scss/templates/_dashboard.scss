@@ -1,0 +1,216 @@
+.dashboard--wrap{
+    
+    @include bp($tablet){
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+.dashboard--nav{
+    color: #ffffff;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: $gridGutter;
+    background-color: $blue-dk;
+
+    & a{
+        text-decoration: none;
+    }
+
+    @include bp($tablet){
+        max-width: 270px;
+        margin: 0;
+        padding: 35px 20px 60px;
+    }
+}
+
+.dashboard--nav-items{
+
+}
+
+.dashboard--nav-item{
+
+    color: $blue-green;
+    fill: $blue-green;
+
+    & a{
+        display: block;
+        padding: 15px 0;
+    }
+
+    & .icon{
+        @include icon(20, 18);
+        fill: inherit;
+        top: 3px;
+        margin-right: 5px;
+    }
+    
+    &:hover{
+        color: rgba($blue-green, 0.8);
+        fill: rgba($blue-green, 0.8);
+    }
+
+    &.active{
+        color: #ffffff;
+        fill: #ffffff;
+    }
+
+}
+
+.dashboard--content{
+    
+    margin: 0 0 60px;
+    padding: 0 $gridGutter;
+
+    @include bp($tablet){
+        flex: 1;
+        margin-left: 40px;
+        padding: 40px 20px 60px;
+    }
+
+    @include bp($desktop-sm){
+        margin-left: 120px;
+    }
+}
+
+.dashboard--section{
+    margin-top: 30px;
+
+    &:first-of-type{
+        margin-top: 0;
+    }
+}
+
+.dashboard--section-title{
+    color: $blue-navy;
+    padding-bottom: 25px;
+}
+
+.dashboard--section-subtitle{
+    display: block;
+    color: $orange;
+    font-family: $Montserrat;
+    @include font(14,18);
+    font-weight: 800;
+    margin: 0 0 15px;
+}
+
+/***********************************
+ PROFILE
+***********************************/
+.profile--header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile--header-thumb{
+    @include avatar(160px);
+}
+
+.profile--header-bio{
+    flex: 1;
+    padding-left: 25px;
+}
+
+.profile--header-name{
+    display: block;
+    @include title--1-extrabold();
+}
+
+.profile--header-type{
+    display: block;
+    color: $blue-green;
+    @include font(20,24);
+}
+
+
+/***********************************
+ AVAILABILITY
+***********************************/
+.row--availability{
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px $grey-lt2;
+    
+    @include bp($tablet-sm){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 840px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border:  0;
+
+        & .input--field{
+            width: calc(#{percentage(1/3)} - 30px) !important;
+        }
+    }
+}
+
+.boat--types,
+.mission--types{
+    margin: 10px 0 60px;
+}
+
+.btn--boat-type{
+    @extend .btn--register-profile;
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    border: solid 1px $grey;
+    box-shadow: none;
+    background-color: transparent;
+
+    &.active{
+        border-color: transparent;
+        @include shadow();
+    }
+
+    & .icon-multicoques{
+        max-width: 100px;
+        max-height: 96px;
+        vertical-align: middle;
+    }
+
+    & .icon-bateau-moteur{
+        max-width: 149px;
+        max-height: 96px;
+        vertical-align: middle;
+    }
+
+    & .icon-voilier{
+        max-width: 93px;
+        max-height: 96px;
+        vertical-align: middle;
+    }
+
+    & .button--label{
+        color: $black;
+        opacity: 1;
+    }
+    
+}
+
+.btn--mission-type{
+    @extend .btn--register-profile;
+    width: calc(25% - 15px);
+    height: 80px;
+    border: solid 1px $grey;
+    box-shadow: none;
+    background-color: transparent;
+
+    &.active{
+        border-color: transparent;
+        @include shadow();
+    }
+
+    & .button--label{
+        color: $black;
+        opacity: 1;
+    }
+}

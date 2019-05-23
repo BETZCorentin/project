@@ -1,0 +1,39 @@
+.select--simple-blue{
+    
+    min-width: 70px;
+    margin: 0;
+    
+    & .choices__inner{
+        color: $blue-navy;
+        font-family: $Montserrat;
+        @include font(16);
+        font-weight: 700;
+        padding: 11px 10px 0;
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    & .choices__list--dropdown .choices__item{
+        white-space: nowrap;
+    }
+
+    & .choices__list--dropdown .choices__item--selectable.is-highlighted{
+        
+    }
+
+    & .choices[data-type*=select-one]:after{
+        margin-top: -4.5px;
+        border: 0;
+        width: 14px;
+        height: 9px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxMCI+ICA8cGF0aCBmaWxsPSIjMjU2RDg2IiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik02LjQ2OSA4LjkwNkwuNDA2IDIuODQ0YS43MjMuNzIzIDAgMCAxLS4yMTktLjUzMWMwLS4yMDkuMDczLS4zODYuMjItLjUzMmwuNjg3LS42ODdhLjc4Mi43ODIgMCAwIDEgLjUzMS0uMjM1LjY3Mi42NzIgMCAwIDEgLjUzMS4yMDRMNyA1LjkwNmw0Ljg0NC00Ljg0M2EuNjcyLjY3MiAwIDAgMSAuNTMxLS4yMDRjLjIwOC4wMS4zODUuMDg5LjUzMS4yMzVsLjY4OC42ODdhLjcyMy43MjMgMCAwIDEgLjIxOC41MzIuNzIzLjcyMyAwIDAgMS0uMjE4LjUzTDcuNTMgOC45MDdhLjY4LjY4IDAgMCAxLS41MzEuMjUuNjguNjggMCAwIDEtLjUzMS0uMjV6Ii8+PC9zdmc+) center center no-repeat;
+        background-size: cover;
+    }
+
+    & .choices[data-type*=select-one].is-open:after{
+        margin-top: -4.5px;
+        transform: rotate(-180deg);
+    }
+
+}

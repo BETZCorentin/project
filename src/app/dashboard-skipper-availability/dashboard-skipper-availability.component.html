@@ -1,0 +1,203 @@
+<app-header></app-header>
+<app-symbols></app-symbols>
+
+<main id="dashboard" role="main">
+
+  <section class="dashboard">
+
+    <div class="dashboard--wrap">
+
+      <nav class="dashboard--nav">
+        <ul class="dashboard--nav-items">
+          <li class="dashboard--nav-item"><a href="040.dashboard-skipper.html"><svg class="icon icon-dashboard"><use xlink:href="#icon-dashboard"></use></svg> Tableau de bord</a></li>
+          <li class="dashboard--nav-item"><a href="041.dashboard-skipper-informations.html"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg> Mes informations</a></li>
+          <li class="dashboard--nav-item"><a href="042.dashboard-skipper-cv.html"><svg class="icon icon-cv"><use xlink:href="#icon-cv"></use></svg> Mon CV nautique</a></li>
+          <li class="dashboard--nav-item active"><a href="043.dashboard-skipper-availability.html"><svg class="icon icon-availability"><use xlink:href="#icon-availability"></use></svg> Mes disponibilités</a></li>
+          <li class="dashboard--nav-item"><a href="044.dashboard-skipper-payments.html"><svg class="icon icon-payment"><use xlink:href="#icon-payment"></use></svg> Mes paiements</a></li>
+          <li class="dashboard--nav-item"><a href="045.dashboard-skipper-opportunities.html"><svg class="icon icon-anchor"><use xlink:href="#icon-anchor"></use></svg> Mes opportunités</a></li>
+        </ul>
+      </nav>
+
+      <div class="dashboard--content">
+
+        <form class="form--skipper-parameters" method="" action="">
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mes paramètres</h2>
+
+            <span class="dashboard--section-subtitle">Quel(s) type(s) de bateaux je conduis :</span>
+
+            <div class="fields--wrap boat--types">
+              <button type="button" class="btn--boat-type active" type="button" value="multicoques">
+                <svg class="icon icon-multicoques"><use xlink:href="#icon-multicoques"></use></svg>
+                <span class="button--label">Multicoques</span>
+              </button>
+              <button type="button" class="btn--boat-type" type="button" value="bateau-moteur">
+                <svg class="icon icon-bateau-moteur"><use xlink:href="#icon-bateau-moteur"></use></svg>
+                <span class="button--label">Bâteau à moteur</span>
+              </button>
+              <button type="button" class="btn--boat-type" type="button" value="voilier">
+                <svg class="icon icon-voilier"><use xlink:href="#icon-voilier"></use></svg>
+                <span class="button--label">Voilier</span>
+              </button>
+              <input type="hidden" name="boat-types" value="">
+            </div>
+
+            <span class="dashboard--section-subtitle">Quel(s) type(s) de prestations je propose :</span>
+            <div class="fields--wrap mission--types">
+              <button type="button" class="btn--mission-type active" type="button" value="charter">
+                <span class="button--label">Charter</span>
+              </button>
+              <button type="button" class="btn--mission-type" type="button" value="convoyage">
+                <span class="button--label">Convoyage</span>
+              </button>
+              <button type="button" class="btn--mission-type" type="button" value="perfectionnement">
+                <span class="button--label">Perfectionnement</span>
+              </button>
+              <button type="button" class="btn--mission-type" type="button" value="regate">
+                <span class="button--label">Régate</span>
+              </button>
+              <input type="hidden" name="mission-types" value="">
+            </div>
+
+            <span class="dashboard--section-subtitle">Taille maximum du bateau que je conduis :</span>
+            <div class="fields--wrap">
+
+              <div class="input--field select medium">
+                <label for="boat-length" class="sr-only">En mètres</label>
+                <select id="boat-length" name="boat-length" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+            </div>
+            <div class="fields--wrap">
+              <span class="range--value-min">0</span>
+              <span class="range--value-max">24</span>
+              <input type="range" min="0" max="24" step="1" value="17">
+            </div>
+
+          </div>
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mes disponibilités</h2>
+
+            <p>Dites-nous où et quand vous êtes disponibles.</p>
+
+            <div class="row--availability">
+
+              <div class="input--field select ">
+                <label for="availability-date-from-01" class="control-label">À partir de</label>
+                <select id="availability-date-from-01" name="availability-date-from-01" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+              <div class="input--field select ">
+                <label for="availability-date-to-01" class="control-label">Jusqu'au</label>
+                <select id="availability-date-to-01" name="availability-date-to-01" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+              <div class="input--field text ">
+                <label for="availability-where-01" class="control-label">Où ?</label>
+                <input id="availability-where-01" name="availability-where-01" type="text" placeholder="" value="">
+
+              </div>
+
+              <button class="icobutton " type="button">
+
+                <svg class="icon icon-trash"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-trash"></use></svg>
+
+                <span class="button--label">Trash</span>
+              </button>
+
+            </div>
+
+            <div class="row--availability">
+
+              <div class="input--field select ">
+                <label for="availability-date-from-02" class="control-label">À partir de</label>
+                <select id="availability-date-from-02" name="availability-date-from-02" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+              <div class="input--field select ">
+                <label for="availability-date-to-02" class="control-label">Jusqu'au</label>
+                <select id="availability-date-to-02" name="availability-date-to-02" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+              <div class="input--field text ">
+                <label for="availability-where-02" class="control-label">Où ?</label>
+                <input id="availability-where-02" name="availability-where-02" type="text" placeholder="" value="">
+
+              </div>
+
+              <button class="icobutton " type="button">
+
+                <svg class="icon icon-trash"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-trash"></use></svg>
+
+                <span class="button--label">Trash</span>
+              </button>
+
+            </div>
+
+            <button class="button button--bluegreen" type="button">
+
+              <svg class="icon icon-plus-o"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus-o"></use></svg>
+
+              <span class="button--label">J&#39;ajoute une disponibilité</span>
+            </button>
+
+          </div>
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mes zones géographiques</h2>
+
+            <span class="dashboard--section-subtitle">Cliquez sur les zones que vous pouvez couvrir.</span>
+
+            <div id="map-availability"></div>
+            <input type="hidden" name="skipper-countries" value="" />
+          </div>
+
+          <div class="form--footer">
+
+            <button class="button button--bluegreen" type="submit">
+
+              <svg class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>
+
+              <span class="button--label">Je valide les modifications</span>
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<app-footer></app-footer>

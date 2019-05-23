@@ -1,0 +1,42 @@
+.rangeslider--horizontal{
+    height: 4px;
+    border-top: solid 1px $grey;
+    box-shadow: none;
+    background: transparent;
+
+    & .rangeslider__fill{
+        height: 4px;
+        background-color: $blue-green;
+    }
+
+    & .rangeslider__handle{
+        top: -18px;
+    }
+}
+
+.rangeslider__handle{
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    font-family: $OpenSans;
+    @include font(14);
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    @include shadow();
+    border: 0;
+    background: $blue-green;
+
+    &:after{
+        content: normal;
+    }
+}
+
+
+.range--value-min,
+.range--value-max{
+    color: $grey;
+    font-family: $OpenSans;
+    @include font(14,24);
+    font-weight: 700;
+}

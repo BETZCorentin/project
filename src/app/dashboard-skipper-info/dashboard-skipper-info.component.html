@@ -1,0 +1,230 @@
+<app-header></app-header>
+<app-symbols></app-symbols>
+
+<main id="dashboard" role="main">
+
+  <section class="dashboard">
+
+    <div class="dashboard--wrap">
+
+      <nav class="dashboard--nav">
+        <ul class="dashboard--nav-items">
+          <li class="dashboard--nav-item"><a href="040.dashboard-skipper.html"><svg class="icon icon-dashboard"><use xlink:href="#icon-dashboard"></use></svg> Tableau de bord</a></li>
+          <li class="dashboard--nav-item active"><a href="041.dashboard-skipper-informations.html"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg> Mes informations</a></li>
+          <li class="dashboard--nav-item"><a href="042.dashboard-skipper-cv.html"><svg class="icon icon-cv"><use xlink:href="#icon-cv"></use></svg> Mon CV nautique</a></li>
+          <li class="dashboard--nav-item"><a href="043.dashboard-skipper-availability.html"><svg class="icon icon-availability"><use xlink:href="#icon-availability"></use></svg> Mes disponibilités</a></li>
+          <li class="dashboard--nav-item"><a href="044.dashboard-skipper-payments.html"><svg class="icon icon-payment"><use xlink:href="#icon-payment"></use></svg> Mes paiements</a></li>
+          <li class="dashboard--nav-item"><a href="045.dashboard-skipper-opportunities.html"><svg class="icon icon-anchor"><use xlink:href="#icon-anchor"></use></svg> Mes opportunités</a></li>
+        </ul>
+      </nav>
+
+      <div class="dashboard--content">
+
+        <form class="form--skipper-profile" method="" action="">
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mes informations</h2>
+
+            <div class="profile--header">
+
+              <div class="profile--header-thumb">
+                <img src="https://pbs.twimg.com/profile_images/1078471113397555200/ro5vaMFW.jpg" alt=" - Skipper Capt'n Boat">
+              </div>
+
+              <div class="profile--header-bio">
+                <span class="profile--header-name">Jean-Baptiste Martin-Lefebvre</span>
+                <span class="profile--header-type">Skipper</span>
+                <div class="profile--header-ratings">
+
+                  <div class="ratings--wrap">
+
+                    <ul class="ratings xl">
+
+                      <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                      <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                      <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                      <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                      <li class="ratings--star"><svg class="icon icon-star-half"><use xlink:href="#icon-star-half"></use></svg></li>
+
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="fields--wrap">
+
+              <div class="input--field text medium">
+                <label for="first-name" class="control-label">Prénom *</label>
+                <input id="first-name" name="first-name" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="last-name" class="control-label">Nom *</label>
+                <input id="last-name" name="last-name" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="phone" class="control-label">Téléphone *</label>
+                <input id="phone" name="phone" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="email" class="control-label">E-mail *</label>
+                <input id="email" name="email" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field select medium">
+                <label for="birthdate" class="control-label">Date de naissance *</label>
+                <select id="birthdate" name="birthdate" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mon expérience</h2>
+
+            <div class="fields--wrap">
+
+              <div class="input--field select medium">
+                <label for="skills-miles" class="control-label">Total de miles parcourus *</label>
+                <select id="skills-miles" name="skills-miles" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+              <div class="input--field textarea ">
+                <label for="skills-summary" class="control-label">À propos de vous</label>
+                <textarea id="skills-summary" name="skills-summary" placeholder="" rows="3"></textarea>
+
+                <span class="input--help">500 caractères maximum</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mes informations complémentaires</h2>
+
+            <div class="fields--wrap">
+
+              <div class="input--field text ">
+                <label for="address" class="control-label">Adresse *</label>
+                <input id="address" name="address" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="address-zipcode" class="control-label">Code postal *</label>
+                <input id="address-zipcode" name="address-zipcode" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="address-city" class="control-label">Ville *</label>
+                <input id="address-city" name="address-city" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field select medium">
+                <label for="address-country" class="control-label">Pays de résidence *</label>
+                <select id="address-country" name="address-country" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">En cas d'urgence</h2>
+
+            <div class="fields--wrap">
+
+              <div class="input--field text medium">
+                <label for="emergency-contact" class="control-label">Personne à contacter en cas d'urgence</label>
+                <input id="emergency-contact" name="emergency-contact" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="emergency-contact-phone" class="control-label">Numéro de téléphone du contact d'urgence</label>
+                <input id="emergency-contact-phone" name="emergency-contact-phone" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field textarea ">
+                <label for="health-infos" class="control-label">Informations médicales utiles</label>
+                <textarea id="health-infos" name="health-infos" placeholder="" rows="3"></textarea>
+
+                <span class="input--help">500 caractères maximum</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mon assurance</h2>
+
+            <div class="fields--wrap">
+
+              <div class="radio-group">
+                <span class="radio-group--label">Je possède une assurance Responsabilité Civile professionnelle*</span>
+                <div class="input--field radio">
+                  <label for="insurance-yes"><input id="insurance-yes" name="insurance" value="Yes" type="radio" checked="checked"> Oui</label>
+                </div>
+                <div class="input--field radio">
+                  <label for="insurance-no"><input id="insurance-no" name="insurance" value="No" type="radio"> Non</label>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="form--footer">
+
+            <button class="button button--bluegreen" type="submit">
+
+              <svg class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>
+
+              <span class="button--label">Je valide les modifications</span>
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<app-footer></app-footer>

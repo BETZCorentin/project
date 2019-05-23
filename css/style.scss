@@ -1,0 +1,72 @@
+/**
+Theme Name: {{ site_title }}
+Theme URI: {{ site_url }}
+Author: {{ site_author }}
+Author URI: {{ site_author_url }}
+Description: {{ site_desc }}
+Version: {{ site_version }}
+License: 
+License URI: 
+Tags: 
+Text Domain: {{ site_template }}
+**/
+
+@import './scss/abstracts/_breakpoints.scss';
+@import './scss/abstracts/_variables.scss';
+@import './scss/abstracts/_mixins.scss';
+
+@import './scss/base/_reset.scss';
+@import './scss/base/_tools.scss';
+
+@import './scss/styleguides/_colors.scss';
+@import './scss/styleguides/_decorations.scss';
+@import './scss/styleguides/_icons.scss';
+@import './scss/styleguides/_fonts.scss';
+@import './scss/styleguides/_headings.scss';
+@import './scss/styleguides/_buttons.scss';
+@import './scss/styleguides/_lists.scss';
+@import './scss/styleguides/_forms.scss';
+@import './scss/styleguides/_tables.scss';
+
+@import './scss/layout/_grid.scss';
+@import './scss/layout/_header.scss';
+@import './scss/layout/_layout.scss';
+
+@import './scss/templates/_login.scss';
+@import './scss/templates/_home.scss';
+@import './scss/templates/_search-results.scss';
+@import './scss/templates/_dashboard.scss';
+@import './scss/templates/_404.scss';
+
+@import './scss/layout/_footer.scss';
+
+@import './scss/components/_search.scss';
+@import './scss/components/_blocks.scss';
+@import './scss/components/_edito.scss';
+@import './scss/components/_reinsurance.scss';
+@import './scss/components/_testimonials.scss';
+@import './scss/components/_tags.scss';
+@import './scss/components/_ratings.scss';
+
+@import './scss/vendors/_choices.js.scss';
+@import './scss/vendors/_responsive-nav.scss';
+@import './scss/vendors/_rangeslider.scss';
+@import './scss/vendors-overrides/_choices.js.scss';
+@import './scss/vendors-overrides/_responsive-nav.scss';
+@import './scss/vendors-overrides/_rangeslider.scss';
+
+{% if site_show_credit %}
+/***********************************
+                     __     
+              __    /\ \    
+   __   _ __ /\_\   \_\ \   
+ /'_ `\/\`'__\/\ \  /'_` \  
+/\ \L\ \ \ \/ \ \ \/\ \L\ \ 
+\ \____ \ \_\  \ \_\ \___,_\ 
+ \/___L\ \/_/   \/_/\/__,_ /
+   /\____/
+   \_/__/
+
+grid-agency.com
+***********************************/
+{% endif %}

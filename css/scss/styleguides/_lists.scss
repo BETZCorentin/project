@@ -1,0 +1,71 @@
+@mixin ul_default(){
+
+	& li{
+		
+		padding: 0 0 5px;
+
+		&:before{
+			position: relative;
+			content: '•';
+			top: -1px;
+			font-family: $Archer;
+			margin-right: 5px;
+		}
+	}
+}
+
+@mixin ul_check(){
+
+	font-family: $Montserrat;
+	@include font(16,24);
+
+	& li{
+
+		position: relative;
+		padding: 0 0 5px 30px;
+
+		&:before{
+			display: inline-block;
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 9px;
+			width: 10px;
+			height: 7px;
+			margin-right: 25px;
+			background: url('./images/icon-list-check.svg') center center no-repeat;
+			background-size: cover;
+		}
+    }
+    
+}
+
+ul.list--check{
+	@include ul_check();
+}
+
+
+@mixin ul_horizontal(){
+	display: flex;
+	list-style: none;
+
+	& li{
+
+		margin-right: 20px;
+		padding-right: 20px;
+		border-right: solid 1px $grey;
+
+		&:last-of-type{
+			border-right: 0;
+		}
+		
+		&:before{
+			content: normal;
+		}
+
+	}
+}
+
+ul.list--h{
+	@include ul_horizontal();
+}

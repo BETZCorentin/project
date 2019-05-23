@@ -1,0 +1,112 @@
+.section--login{
+    max-width: $gridWidth;
+    margin: 0 auto 60px;
+}
+
+.login--wrap{
+
+    padding: 45px $gridGutter;
+
+    @include bp($tablet-sm){
+        padding: 60px $gridGutter;
+    }
+
+    @include bp($tablet){
+        padding: 85px 0;
+    }
+}
+
+.login--screen{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 880px;
+    margin: 0 auto;
+
+    & p{
+        @include font(12,18);
+        font-weight: 300;
+    }
+}
+
+.login--already-registered{
+    color: #ffffff;
+    width: 100%;
+    padding: 30px 20px;
+    background: $blue-dk;
+
+    & .input--field{
+        max-width: 300px;;
+    }
+
+    & a{
+        display: inline-block;
+        color: $blue-green;
+        @include font(14);
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    @include bp($tablet-xs){
+        max-width: 50%;
+        padding: 60px 30px;
+    }
+
+
+    @include bp($tablet-sm){
+        max-width: 400px;
+    }
+}
+
+.login--create-account{
+    color: $black;
+    flex: 1;
+    padding: 30px 20px;
+    background: #ffffff;
+
+    & .btn-submit{
+        margin: 0 auto;
+    }
+
+    @include bp($tablet-xs){
+        padding: 60px 30px;
+    }
+
+}
+
+.login--screen-title{
+    display: block;
+    color: $blue-green;
+    font-family: $Montserrat;
+    @include font(24,28);
+    font-weight: 700;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+
+
+/*** LOGIN ***/
+.login--submit{
+    text-align: center;
+    @include bp($tablet-xs){
+        text-align: left;
+    }
+}
+
+/*** REGISTER ***/
+.register--toggle-profile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 360px;
+    margin: 20px  auto 33px;
+
+    & button{
+        width: calc(50% - 10px);
+    }
+
+}
+
+.register--submit{
+    text-align: center;
+}

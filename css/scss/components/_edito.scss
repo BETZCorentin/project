@@ -1,0 +1,216 @@
+
+
+.section--edito{
+
+}
+
+.section--skipper,
+.section--proprietaire{
+    position: relative;
+    width: 100%;
+    max-width: $gridWidth;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.section--edito-title{
+    position: relative;
+    font-family: $Montserrat;
+    @include font(24,28);
+    font-weight: 700;
+    left: 15px;
+    padding: 20px 0 0 60px;
+    text-transform: uppercase;
+
+    &.skipper{
+        
+        color: #ffffff;
+
+        &:before{
+            display: block;
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 62px;
+            background: url('./images/bg-title-skipper.svg') center center no-repeat;
+            background-size: cover;
+        }
+
+        @include bp($tablet-sm){
+            
+            color: $blue-navy;
+
+            &:before{
+                width: 165px;
+                height: 127px;
+            }
+        }
+    }
+
+    &.proprietaire{
+        
+        color: #ffffff;
+
+        &:before{
+            display: block;
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 72px;
+            background: url('./images/bg-title-proprietaire.svg') center center no-repeat;
+            background-size: cover;
+        }
+
+        @include bp($tablet-sm){
+            &:before{
+                width: 181px;
+                height: 130px;
+            }
+        }
+    }
+
+    @include bp($tablet-sm){
+        left: 60%;
+        padding: 65px 0 0 100px;
+        transform: translate(-50%,0);
+
+        &.skipper,
+        &.proprietaire{
+            
+            &:before{
+                top: 30px;
+            }
+
+        }
+        
+    }
+
+}
+
+.section--edito-wrap{
+    position: relative;
+    
+    padding: 50px 0 80px;
+
+    @include bp($tablet-sm){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.section--edito-image{
+
+    & img{
+        display: block;
+    }
+
+    @include bp($tablet-sm){
+        width: 50%;
+        max-width: 600px;
+        text-align: right;
+
+        & img{
+            margin-right: 0;
+            margin-left: auto;
+        }
+    }
+    
+}
+
+.section--edito-content{
+    position: relative;
+    padding: 35px;
+    background-color: #ffffff;
+    @include shadow();
+
+    & .section--subtitle{
+        padding: 0 0 25px;
+    }
+
+    & li{
+        font-family: $OpenSans;
+    }
+
+    & .button{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%,50%);
+        white-space: nowrap;
+
+        @include bp($tablet-sm){
+            left: auto;
+            transform: translate(0,50%);
+        }
+    }
+
+    @include bp($tablet-sm){
+        width: 50%;
+        max-width: 600px;
+        padding: 50px 55px;
+    }
+}
+
+
+
+/** SKIPPER **/
+.section--skipper{
+    
+    padding: 20px;
+    overflow: hidden;
+    background-color: $blue-navy;
+
+    @include bp($tablet-sm){
+
+        padding: 0;
+        background: none;
+
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            height: 100%;
+            background-color: $blue-navy;
+            z-index: -1;
+        }
+    }
+
+}
+
+
+/** PROPRIETAIRE **/
+.section--proprietaire{
+
+    padding: 20px;
+    overflow: hidden;
+    background-color: $blue-green;
+
+    @include bp($tablet-sm){
+
+        padding: 0;
+        background: none;
+
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 100%;
+            background-color: $blue-green;
+            z-index: -1;
+        }
+    }
+    
+}

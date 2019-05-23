@@ -1,0 +1,117 @@
+/***********************************
+// ███████╗ ██████╗ ███╗   ██╗████████╗███████╗
+// ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔════╝
+// █████╗  ██║   ██║██╔██╗ ██║   ██║   ███████╗
+// ██╔══╝  ██║   ██║██║╚██╗██║   ██║   ╚════██║
+// ██║     ╚██████╔╝██║ ╚████║   ██║   ███████║
+// ╚═╝      ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝
+// include required Fonts & their properties.
+***********************************/
+/* Websafe Fonts helper
+
+			*	*	*
+ Georgia, serif
+ "Palatino Linotype", "Book Antiqua", Palatino, serif
+ "Times New Roman", Times, serif
+ 			*	*	*
+ Arial, Helvetica, sans-serif
+ "Arial Black", Gadget, sans-serif
+ "Comic Sans MS", cursive, sans-serif
+ Impact, Charcoal, sans-serif
+ "Lucida Sans Unicode", "Lucida Grande", sans-serif
+ Tahoma, Geneva, sans-serif
+ "Trebuchet MS", Helvetica, sans-serif
+ Verdana, Geneva, sans-serif
+ 			*	*	*
+ "Courier New", Courier, monospace	
+ "Lucida Console", Monaco, monospace
+
+*/
+
+@font-face {
+    font-family: 'Archer';
+    src: url('./css/fonts/Archer-Bold.woff2') format('woff2'),
+        url('./css/fonts/Archer-Bold.woff') format('woff'),
+        url('./css/fonts/Archer-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+$Archer: 'Archer';
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./css/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('./css/fonts/OpenSans-Regular.woff') format('woff'),
+        url('./css/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./css/fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('./css/fonts/OpenSans-Bold.woff') format('woff'),
+        url('./css/fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$OpenSans: 'Open Sans';
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./css/fonts/Montserrat-Light.woff2') format('woff2'),
+        url('./css/fonts/Montserrat-Light.woff') format('woff'),
+        url('./css/fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./css/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('./css/fonts/Montserrat-Regular.woff') format('woff'),
+        url('./css/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./css/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('./css/fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('./css/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./css/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('./css/fonts/Montserrat-Bold.woff') format('woff'),
+        url('./css/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./css/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('./css/fonts/Montserrat-ExtraBold.woff') format('woff'),
+        url('./css/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./css/fonts/Montserrat-Black.woff2') format('woff2'),
+        url('./css/fonts/Montserrat-Black.woff') format('woff'),
+        url('./css/fonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+$Montserrat: 'Montserrat';
+

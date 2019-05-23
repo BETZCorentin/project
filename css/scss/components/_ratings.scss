@@ -1,0 +1,30 @@
+.ratings--wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: row;
+
+    &.xl{
+        .ratings--star{
+            margin-right: 5px;
+        
+            & .icon{
+                @include icon(20,20);
+            }
+        }
+    }
+}
+
+.ratings--star{
+    fill: $blue-navy;
+    margin-right: 3px;
+
+    & .icon{
+        @include icon(16,16);
+    }
+}

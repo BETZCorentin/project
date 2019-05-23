@@ -1,0 +1,145 @@
+.section--testimonials{
+    padding: 40px 0 0;
+
+    @include bp($tablet){
+        padding: 0;
+    }
+    
+}
+
+.section--testimonials-wrap{
+    
+    @include bp($tablet){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: $gridWidth;
+        margin: 0 auto;
+    }
+}
+
+.section--testimonials-block__slider{
+    
+    overflow: hidden;
+
+    @include bp($tablet){
+        flex: 1;
+    }
+    
+}
+
+.section--testimonials-block__image{
+
+    display: none;
+
+    @include bp($tablet){
+
+        display: block;
+        max-width: 390px;
+
+        & img{
+            display: block;
+        }
+    }
+
+}
+
+
+.block--testimonials{
+    //width: 100%;
+}
+
+.block--testimonials-title{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 30px 50px;
+
+    @include bp($tablet-sm){
+        padding: 0 0 50px;
+    }
+}
+
+.block--testimonials-slider{
+    width: 100%;
+    //padding: 50px 0 0;
+}
+
+.block--testimonial{
+    position: relative;
+    @include shadow();
+    max-width: 600px;
+    margin: 0 auto 80px;
+    padding: 50px 30px;
+    overflow: visible;
+    background-color: #ffffff;
+    z-index: 2;
+
+    @include bp($tablet-sm){
+        padding: 50px 60px;
+    }
+}
+
+.block--testimonial-content{
+    
+}
+
+.block--testimonial-author{
+    color: $orange;
+    margin: 15px 0;
+}
+
+.block--testimonial-thumb{
+    @include avatar();
+    position: absolute;
+    left: 50%;
+    margin: -10px auto 0;
+    transform: translate(-50%,0);
+}
+
+
+.slick-dots{
+    position: relative !important;
+    max-width: 600px;
+    margin: 0 auto !important;
+    top: -60px;
+    left: 12.5vw;
+    bottom: auto !important;
+    text-align: left !important;
+    z-index: 1;
+
+    @include bp($tablet-sm){
+        left: -10px;
+    }
+}
+
+.slick-dots li button:before{
+    font-size: 12px !important;
+    //opacity: 1 !important;
+    color: $grey-dk !important;
+}
+
+.slick-dots li.slick-active button:before{
+    color: $blue-green !important;
+    opacity: 1 !important;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before{
+    
+}
+
+.slick-slide{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &.slick-active{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.slick-slide:focus{
+    outline: 0;
+}

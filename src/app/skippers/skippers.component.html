@@ -1,0 +1,374 @@
+
+<app-symbols></app-symbols>
+<app-header></app-header>
+<main id="search-results" role="main">
+
+  <div class="search--horizontal">
+    <div class="search--horizontal-wrap">
+      <form class="form--search-horizontal">
+        <div class="form--search-toggle">
+
+          <ul class="form--search-block__wrap">
+            <li>
+              <button type="button" class="btn--search-toggle active">
+                <svg class="icon icon-skipper"><use xlink:href="#icon-skipper"></use></svg>
+                <span class="button--label">Je suis <strong>un skipper</strong></span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="btn--search-toggle" data-search-tab="proprietaire">
+                <svg class="icon icon-proprietaire"><use xlink:href="#icon-proprietaire"></use></svg>
+                <span class="button--label">Je recherche <strong>un skipper</strong></span>
+              </button>
+            </li>
+          </ul>
+
+          <input type="hidden" name="type" value="skipper">
+        </div>
+        <div class="form--search-filters">
+
+          <div class="search--special-input mission">
+            <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+            <div class="search--special-input__wrap">
+              <label class="search--special-input__label">Je recherche</label>
+              <div class="search--special-input__field">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="search--special-input location">
+            <svg class="icon icon-compass"><use xlink:href="#icon-compass"></use></svg>
+            <div class="search--special-input__wrap">
+              <label class="search--special-input__label">Où</label>
+              <div class="search--special-input__field">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="search--special-input date">
+            <svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
+            <div class="search--special-input__wrap">
+              <label class="search--special-input__label">Quand ?</label>
+              <div class="search--special-input__field">
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="form--search-submit">
+          <button class="button" type="submit">
+            <svg class="icon icon-search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+            <span class="button--label">Chercher une mission</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <section class="results--skippers">
+
+    <div class="results--skippers-count">
+      5 résultats correspondent à votre recherche
+    </div>
+
+    <div class="results--skippers-wrap">
+
+      <div class="block--skipper">
+        <div class="block--skipper-summary">
+          <div class="block--skipper-thumb">
+            <img src="https://pbs.twimg.com/profile_images/1078471113397555200/ro5vaMFW.jpg" alt="Eric T. - Skipper Capt'n Boat">
+          </div>
+          <div class="block--skipper-bio">
+            <div class="block--skipper-bio__name">
+              Eric T.
+            </div>
+            <div class="block--skipper-bio__desc">
+              <p>Capitaine 200</p>
+              <p>Yachtmaster offshore sailing boat</p>
+            </div>
+            <div class="block--skipper-bio__ratings">
+
+              <div class="ratings--wrap">
+
+                <ul class="ratings">
+
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="block--skipper-skills">
+          <div>
+            <strong>Total de miles parcourus :</strong> 16 000
+          </div>
+          <div>
+            <strong>Ce skipper recherche :</strong>
+            <ul class="list--tags">
+              <li><span>hey tag!</span></li>
+              <li><span>Another tag</span></li>
+              <li><span>Charter</span></li>
+              <li><span>Perfectionnement</span></li>
+              <li><span>Convoyage</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="block--skipper-cta">
+
+          <a class="button button--bluegreen" href="#">
+
+            <svg class="icon icon-plus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use></svg>
+
+            <span class="button--label">plus de détail</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="block--skipper">
+        <div class="block--skipper-summary">
+          <div class="block--skipper-thumb">
+            <img src="https://pbs.twimg.com/profile_images/1078471113397555200/ro5vaMFW.jpg" alt="Michel D. - Skipper Capt'n Boat">
+          </div>
+          <div class="block--skipper-bio">
+            <div class="block--skipper-bio__name">
+              Michel D.
+            </div>
+            <div class="block--skipper-bio__desc">
+              <p>Capitaine 200</p>
+              <p>Yachtmaster offshore sailing boat</p>
+            </div>
+            <div class="block--skipper-bio__ratings">
+
+              <div class="ratings--wrap">
+
+                <ul class="ratings">
+
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg></li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="block--skipper-skills">
+          <div>
+            <strong>Total de miles parcourus :</strong> 16 000
+          </div>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac bibendum sem, eget varius magna. Sed molestie mi ex, sit amet aliquet tellus finibus ac.
+          </div>
+          <div>
+            <strong>Ce skipper recherche :</strong>
+            <ul class="list--tags">
+              <li><span>hey tag!</span></li>
+              <li><span>Another tag</span></li>
+              <li><span>Charter</span></li>
+              <li><span>Perfectionnement</span></li>
+              <li><span>Convoyage</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="block--skipper-cta">
+
+          <a class="button button--bluegreen" href="#">
+
+            <svg class="icon icon-plus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use></svg>
+
+            <span class="button--label">plus de détail</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="block--skipper">
+        <div class="block--skipper-summary">
+          <div class="block--skipper-thumb">
+            <img src="https://pbs.twimg.com/profile_images/1078471113397555200/ro5vaMFW.jpg" alt="Florence A. - Skipper Capt'n Boat">
+          </div>
+          <div class="block--skipper-bio">
+            <div class="block--skipper-bio__name">
+              Florence A.
+            </div>
+            <div class="block--skipper-bio__desc">
+              <p>Capitaine 200</p>
+              <p>Yachtmaster offshore sailing boat</p>
+            </div>
+            <div class="block--skipper-bio__ratings">
+
+              <div class="ratings--wrap">
+
+                <ul class="ratings">
+
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-half"><use xlink:href="#icon-star-half"></use></svg></li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="block--skipper-skills">
+          <div>
+            <strong>Total de miles parcourus :</strong> 16 000
+          </div>
+          <div>
+            <strong>Ce skipper recherche :</strong>
+            <ul class="list--tags">
+              <li><span>hey tag!</span></li>
+              <li><span>Another tag</span></li>
+              <li><span>Charter</span></li>
+              <li><span>Perfectionnement</span></li>
+              <li><span>Convoyage</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="block--skipper-cta">
+
+          <a class="button button--bluegreen" href="#">
+
+            <svg class="icon icon-plus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use></svg>
+
+            <span class="button--label">plus de détail</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="block--skipper">
+        <div class="block--skipper-summary">
+          <div class="block--skipper-thumb">
+            <img src="https://pbs.twimg.com/profile_images/1078471113397555200/ro5vaMFW.jpg" alt="Ellen Mac A. - Skipper Capt'n Boat">
+          </div>
+          <div class="block--skipper-bio">
+            <div class="block--skipper-bio__name">
+              Ellen Mac A.
+            </div>
+            <div class="block--skipper-bio__desc">
+              <p>Capitaine 200</p>
+              <p>Yachtmaster offshore sailing boat</p>
+            </div>
+            <div class="block--skipper-bio__ratings">
+
+              <div class="ratings--wrap">
+
+                <ul class="ratings">
+
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="block--skipper-skills">
+          <div>
+            <strong>Total de miles parcourus :</strong> 16 000
+          </div>
+          <div>
+            <strong>Ce skipper recherche :</strong>
+            <ul class="list--tags">
+              <li><span>hey tag!</span></li>
+              <li><span>Another tag</span></li>
+              <li><span>Charter</span></li>
+              <li><span>Perfectionnement</span></li>
+              <li><span>Convoyage</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="block--skipper-cta">
+
+          <a class="button button--bluegreen" href="#">
+
+            <svg class="icon icon-plus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use></svg>
+
+            <span class="button--label">plus de détail</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="block--skipper">
+        <div class="block--skipper-summary">
+          <div class="block--skipper-thumb">
+            <img src="https://pbs.twimg.com/profile_images/1078471113397555200/ro5vaMFW.jpg" alt="Jean-Jacques C. - Skipper Capt'n Boat">
+          </div>
+          <div class="block--skipper-bio">
+            <div class="block--skipper-bio__name">
+              Jean-Jacques C.
+            </div>
+            <div class="block--skipper-bio__desc">
+              <p>Capitaine 200</p>
+              <p>Yachtmaster offshore sailing boat</p>
+            </div>
+            <div class="block--skipper-bio__ratings">
+
+              <div class="ratings--wrap">
+
+                <ul class="ratings">
+
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-half"><use xlink:href="#icon-star-half"></use></svg></li>
+                  <li class="ratings--star"><svg class="icon icon-star-empty"><use xlink:href="#icon-star-empty"></use></svg></li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="block--skipper-skills">
+          <div>
+            <strong>Total de miles parcourus :</strong> 16 000
+          </div>
+          <div>
+            <strong>Ce skipper recherche :</strong>
+            <ul class="list--tags">
+              <li><span>hey tag!</span></li>
+              <li><span>Another tag</span></li>
+              <li><span>Charter</span></li>
+              <li><span>Perfectionnement</span></li>
+              <li><span>Convoyage</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="block--skipper-cta">
+
+          <a class="button button--bluegreen" href="#">
+
+            <svg class="icon icon-plus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use></svg>
+
+            <span class="button--label">plus de détail</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<app-footer></app-footer>

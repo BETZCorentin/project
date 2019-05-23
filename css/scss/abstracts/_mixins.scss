@@ -1,0 +1,44 @@
+/**************************************************
+// ███╗   ███╗██╗██╗  ██╗██╗███╗   ██╗███████╗
+// ████╗ ████║██║╚██╗██╔╝██║████╗  ██║██╔════╝
+// ██╔████╔██║██║ ╚███╔╝ ██║██╔██╗ ██║███████╗
+// ██║╚██╔╝██║██║ ██╔██╗ ██║██║╚██╗██║╚════██║
+// ██║ ╚═╝ ██║██║██╔╝ ██╗██║██║ ╚████║███████║
+// ╚═╝     ╚═╝╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝
+// 1. Font-size Helper
+**************************************************/
+@mixin font( $fontsize, $lineheight:$fontsize ) {
+	font-size: #{$fontsize}px;
+	font-size: #{$fontsize / 10}rem;
+	@if( $lineheight != 0 ){
+		line-height: #{$lineheight}px;
+		line-height: #{$lineheight / 10}rem;
+	}
+}
+
+@mixin shadow(){
+	box-shadow: 0 10px 30px 0 rgba(0,0,0,0.05);
+}
+
+@mixin avatar($width:120px){
+	display: block;
+	position: relative;
+	width: #{$width/3};
+	height: #{$width/3};
+	border-radius: #{$width/3*0.5};
+	background-color: $grey;
+	overflow: hidden;
+
+	& img{
+		display: block;
+		object-fit: cover;
+		min-width: 100%;
+		min-height: 100%;
+	}
+
+	@include bp($tablet){
+		width: $width;
+		height: $width;
+		border-radius: #{$width/2};
+	}
+}

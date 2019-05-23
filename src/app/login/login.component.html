@@ -1,0 +1,104 @@
+<app-symbols></app-symbols>
+
+<app-header></app-header>
+
+<main id="login" role="main">
+
+  <section class="section--login">
+
+    <div class="login--wrap bg--picture">
+
+      <div class="login--screen">
+
+        <div class="login--already-registered">
+          <span class="login--screen-title">J'ai déjà un compte</span>
+
+          <form class="login" method="GET" action="login" (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+            <div class="input--field text dark">
+              <label for="login" class="control-label"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg> E-mail</label>
+              <input id="login" name="login" type="text" placeholder="" value="" ngModel>
+
+            </div>
+
+            <div class="input--field password dark">
+              <label for="password" class="control-label"><svg class="icon icon-lock"><use xlink:href="#icon-lock"></use></svg> Mot de passe</label>
+              <input id="password" name="password" type="password" placeholder="" value="" ngModel>
+
+            </div>
+
+            <div class="input--field checkbox dark">
+              <label for="session"><input id="session" name="" value="session" type="checkbox"> se souvenir de moi</label>
+            </div>
+
+            <div class="login--submit">
+
+              <button class="button button btn-submit" type="submit">
+
+                <svg class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>
+
+                <span class="button--label">Je me connecte</span>
+              </button>
+
+              <br><a href="#">mot de passe oublié ?</a>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="login--create-account">
+          <span class="login--screen-title">Je n'ai pas encore de compte</span>
+
+          <p>Vous êtes skipper ou vous cherchez un skipper pour réaliser une prestation ? Inscrivez-vous gratuitement et accédez à toutes les annonces !</p>
+
+          <form class="register" method="GET" action="register">
+
+            <div class="register--toggle-profile">
+
+              <button type="button" class="btn--register-profile active" type="button" value="skipper">
+                <svg class="icon icon-skipper"><use xlink:href="#icon-skipper"></use></svg>
+                <span class="button--label">Je suis un skipper</span>
+              </button>
+
+              <button type="button" class="btn--register-profile" type="button" value="proprietaire">
+                <svg class="icon icon-proprietaire"><use xlink:href="#icon-proprietaire"></use></svg>
+                <span class="button--label">Je suis un propriétaire</span>
+              </button>
+
+              <input name="register-profile" type="hidden" value="">
+
+            </div>
+
+            <div class="register--submit">
+
+              <button class="button button btn-submit" type="submit">
+
+                <svg class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>
+
+                <span class="button--label">Je m'inscris</span>
+              </button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <picture>
+
+        <source srcset="assets/images/cover-login@2x.jpg" media="(min-width: 1025px)" />
+
+        <source srcset="assets/images/cover-login.jpg" media="(max-width: 1024px)" />
+
+        <img src="assets/images/cover-login.jpg" alt="Login" class="bg--picture-img">
+      </picture>
+
+    </div>
+
+  </section>
+
+</main>
+
+<app-footer></app-footer>

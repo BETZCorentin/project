@@ -1,0 +1,8 @@
+.nav-toggle{
+    display: block;
+
+    &:hover,
+    &:focus{
+        color: $blue-green;
+    }
+}

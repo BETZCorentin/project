@@ -1,0 +1,78 @@
+/**************************************************
+// ██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗ 
+// ██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
+// ███████║█████╗  ███████║██║  ██║█████╗  ██████╔╝
+// ██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗
+// ██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║
+// ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+// 1. Main Header
+**************************************************/
+
+.header--main{
+    position: relative;
+    padding: 12px 0 0;
+    border-bottom: solid 28px $orange;
+    z-index: 10;
+
+    & a{
+        color: $blue-navy;
+    }
+}
+
+.header--main-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: $gridWidth;
+    margin: 0 auto;
+
+    & a{
+        text-decoration: none;
+    }
+}
+
+.logo{
+
+    position: relative;
+    left: 15px;
+
+    & img{
+        display: block;
+    }
+
+    @include bp($tablet-sm){
+        left: 0;
+    }
+
+}
+
+.site--name{
+    color: #ffffff;
+    position: absolute;
+    display: block;
+    font-family: $Archer;
+    @include font(20,28);
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transform: translate(-50%,0);
+}
+
+
+.nav--main{
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    ul li {
+        margin-left: 10px;
+    }
+
+}

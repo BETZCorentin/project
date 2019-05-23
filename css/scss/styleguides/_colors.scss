@@ -1,0 +1,33 @@
+/**************************************************
+//  ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
+// ██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
+// ██║     ██║   ██║██║     ██║   ██║██████╔╝███████╗
+// ██║     ██║   ██║██║     ██║   ██║██╔══██╗╚════██║
+// ╚██████╗╚██████╔╝███████╗╚██████╔╝██║  ██║███████║
+//  ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+// 1. Colors variables & Helpers
+// 2. Gradients
+**************************************************/
+
+$white: #FAFAFA;
+
+$blue-navy: #256D86;
+$blue-green: #39BBBD;
+$blue-dk: #113440;
+
+$orange: #EE5F51;
+
+$grey-lt: #F0F0ED;
+$grey-lt2: #D6D5D4;
+$grey: #B3B3B3;
+$grey-dk: #666666;
+$grey-dk2: #4A4A4A;
+
+$black: #353535;
+
+$beige: #EEEBD8;
+
+
+@mixin gradient($gradientStart: $defaultColor, $gradientEnd: mix($defaultColor, #ffffff, 0.3)){
+    background: linear-gradient( -32deg, $gradientStart 0%, $gradientEnd 100%);
+}

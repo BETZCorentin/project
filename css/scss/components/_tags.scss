@@ -1,0 +1,29 @@
+.list--tags{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: space-evenly;
+    left: -5px; /** Hack for left margin **/
+
+    & li{
+        color: $black;
+
+        &:first-of-type{
+            margin-left: 0;
+        }
+
+        &:last-of-type{
+            margin-right: 0;
+            justify-self: flex-start;
+        }
+    }
+
+    & li span{
+        display: block;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 4px;
+        background: $grey-lt;
+    }
+}

@@ -1,0 +1,173 @@
+<app-header></app-header>
+<app-symbols></app-symbols>
+
+<main id="dashboard" role="main">
+
+  <section class="dashboard">
+
+    <div class="dashboard--wrap">
+
+      <nav class="dashboard--nav">
+        <ul class="dashboard--nav-items">
+          <li class="dashboard--nav-item"><a href="040.dashboard-skipper.html"><svg class="icon icon-dashboard"><use xlink:href="#icon-dashboard"></use></svg> Tableau de bord</a></li>
+          <li class="dashboard--nav-item"><a href="041.dashboard-skipper-informations.html"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg> Mes informations</a></li>
+          <li class="dashboard--nav-item"><a href="042.dashboard-skipper-cv.html"><svg class="icon icon-cv"><use xlink:href="#icon-cv"></use></svg> Mon CV nautique</a></li>
+          <li class="dashboard--nav-item"><a href="043.dashboard-skipper-availability.html"><svg class="icon icon-availability"><use xlink:href="#icon-availability"></use></svg> Mes disponibilités</a></li>
+          <li class="dashboard--nav-item active"><a href="044.dashboard-skipper-payments.html"><svg class="icon icon-payment"><use xlink:href="#icon-payment"></use></svg> Mes paiements</a></li>
+          <li class="dashboard--nav-item"><a href="045.dashboard-skipper-opportunities.html"><svg class="icon icon-anchor"><use xlink:href="#icon-anchor"></use></svg> Mes opportunités</a></li>
+        </ul>
+      </nav>
+
+      <div class="dashboard--content">
+
+        <form class="form--skipper-bank" method="" action="">
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mes paiements</h2>
+
+            <span class="dashboard--section-subtitle">Missions en attente de paiement</span>
+            <p>Vous n’avez aucune mission en attente de paiement.</p>
+            <br>
+            <br>
+            <span class="dashboard--section-subtitle">Missions terminées et paiements effectués</span>
+            <p>Vous n’avez aucune mission terminée ni paiement effectué.</p>
+            <br>
+            <br>
+
+          </div>
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mes informations de paiement</h2>
+
+            <div class="fields--wrap">
+
+              <div class="input--field text medium">
+                <label for="first-name" class="control-label">Prénom *</label>
+                <input id="first-name" name="first-name" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="address" class="control-label">Adresse *</label>
+                <input id="address" name="address" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="last-name" class="control-label">Nom *</label>
+                <input id="last-name" name="last-name" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="zipcode" class="control-label">Code postal *</label>
+                <input id="zipcode" name="zipcode" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field select medium">
+                <label for="birthdate" class="control-label">Date de naissance *</label>
+                <select id="birthdate" name="birthdate" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="city" class="control-label">Ville *</label>
+                <input id="city" name="city" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field text medium">
+                <label for="email" class="control-label">E-mail *</label>
+                <input id="email" name="email" type="text" placeholder="" value="">
+
+              </div>
+
+              <div class="input--field select medium">
+                <label for="country" class="control-label">Pays *</label>
+                <select id="country" name="country" class="choices">
+                  <option value="1">FR</option>
+                  <option value="2">EN</option>
+                  <option value="3">ES</option>
+                </select>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mon statut</h2>
+
+            <div class="fields--wrap">
+
+              <div class="radio-group">
+                <span class="radio-group--label">Je possède un numéro SIREN</span>
+                <div class="input--field radio">
+                  <label for="siren-yes"><input id="siren-yes" name="siren" value="Yes" type="radio" checked="checked"> Oui</label>
+                </div>
+                <div class="input--field radio">
+                  <label for="siren-no"><input id="siren-no" name="siren" value="No" type="radio"> Non</label>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="dashboard--section">
+            <h2 class="dashboard--section-title">Mes informations bancaires</h2>
+
+            <div class="fields--wrap">
+
+              <div class="input--field text ">
+                <label for="skipper-sepa" class="control-label">Mon IBAN</label>
+                <input id="skipper-sepa" name="skipper-sepa" type="text" placeholder="" value="">
+
+              </div>
+
+              <span class="dashboard--section-subtitle">Ma pièce d'identité</span>
+
+              <p>Afin de valider votre compte de paiement, merci de fournir une pièce d'identité valide. <br> Capt'n boat ne conservera pas ce document.</p>
+
+              <div class="input--field file small">
+                <label for="text-id" class="control-label">Default Upload field *</label>
+                <div class="upload-wrapper">
+                  <input type="file" name="text-id" id="text-id">
+                  <span class="upload-placeholder">Choisir un fichier...</span>
+                  <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="form--footer">
+            <p class="form--mentions">En cliquant sur ce bouton, vous acceptez nos <a href="#">conditions générales d'utilisation</a> ainsi que les <a href="#">conditions d'utilisation des comptes connectés stripe</a>.</p>
+
+            <button class="button button--bluegreen" type="submit">
+
+              <svg class="icon icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>
+
+              <span class="button--label">Envoyer</span>
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<app-footer></app-footer>

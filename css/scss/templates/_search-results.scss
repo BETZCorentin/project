@@ -1,0 +1,154 @@
+.block--skipper,
+.block--boat{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 30px;
+    @include shadow();
+    background-color: #ffffff;
+
+    @include bp($tablet){
+        
+    }
+}
+
+.block--skipper-thumb,
+.block--boat-thumb{
+    @include avatar();
+}
+
+.block--skipper-summary,
+.block--boat-summary{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+    @include bp($tablet){
+        flex-direction: row;
+    }
+
+}
+
+.block--skipper-bio,
+.block--boat-infos{
+    
+    flex: 1;
+    font-family: $Montserrat;
+    padding-left: 15px;
+    
+
+    &__name{
+        @include font(20,24);
+        font-weight: 800;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    &__desc{
+        color: $blue-green;
+
+        & p{
+            @include font(14,20);
+        }
+    }
+
+    @include bp($tablet){
+        padding-left: 25px;
+    }
+}
+
+.block--boat-infos{
+    
+}
+
+.block--boat-infos__mission{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.block--boat-infos__category{
+    flex: 1;
+    color: $blue-green;
+
+    & p{
+        @include font(14,20);
+    }
+}
+
+.block--boat-fee{
+    font-family: $Montserrat;
+    @include font(30,37);
+    font-weight: 800;
+}
+
+.block--skipper-skills,
+.block--boat-journey{
+    
+    @include font(14,18);
+
+    & strong{
+        display: inline-block;
+        color: $orange;
+        font-family: $Montserrat;
+        font-weight: 800;
+        margin-bottom: 5px;
+    }
+
+    & div{
+        margin: 5px 0;
+    }
+}
+
+.block--skipper-cta,
+.block--boat-cta{
+
+    & .button{
+        margin-top: 10px;
+    }
+
+    @include bp($tablet){
+        margin-top: auto;
+        justify-self: flex-end;
+    }
+}
+
+
+/*** LIST ***/
+.results--skippers-count,
+.results--boats-count{
+    color: $blue-navy;
+    @include font(24,30);
+    font-family: $Montserrat;
+    font-weight: 300;
+    max-width: 960px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.results--skippers-wrap,
+.results--boats-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto 100px;
+
+    & .block--skipper,
+    & .block--boat{
+        width: calc(100% - 20px);
+        margin: 0 10px 20px;
+    }
+    
+    @include bp($tablet-sm){
+        flex-direction: row;
+        //flex-wrap: wrap;
+        //justify-content: space-around;
+
+        & .block--skipper,
+        & .block--boat{
+            width: calc(50% - 20px);
+            margin: 0 10px 20px;
+        }
+    }
+
+}

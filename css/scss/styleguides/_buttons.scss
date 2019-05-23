@@ -1,0 +1,204 @@
+/***********************************
+// ██████╗ ██╗   ██╗████████╗████████╗ ██████╗ ███╗   ██╗███████╗
+// ██╔══██╗██║   ██║╚══██╔══╝╚══██╔══╝██╔═══██╗████╗  ██║██╔════╝
+// ██████╔╝██║   ██║   ██║      ██║   ██║   ██║██╔██╗ ██║███████╗
+// ██╔══██╗██║   ██║   ██║      ██║   ██║   ██║██║╚██╗██║╚════██║
+// ██████╔╝╚██████╔╝   ██║      ██║   ╚██████╔╝██║ ╚████║███████║
+// ╚═════╝  ╚═════╝    ╚═╝      ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+// 1. <button> reset
+// 2. Buttons styles
+***********************************/
+button{
+	cursor: pointer;
+	appearance: none;
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+
+	&:hover{
+		cursor: pointer;
+	}
+
+}
+
+@mixin button($color: '', $background: ''){
+	display: inline-block;
+	@if $color != ''{
+	color: $color;
+	}
+	font-family: $OpenSans;
+	@include font(20);
+	font-weight: 700;
+	padding: 20px 35px;
+	text-decoration: none;
+	border-radius: 4px;
+	@if $background != ''{
+	background-color: $background;
+	} @else {
+	background-color: transparent;
+	}
+	transition: all 0.3s ease-in-out;
+	white-space: nowrap;
+
+	& .icon{
+		fill: $color;
+		@include icon(18,18);
+		top: 2px;
+		margin-right: 5px;
+	}
+
+	&:focus{
+		outline: 0;
+		@if $background != ''{
+		//@include shadow();
+		}
+	}
+
+	&:hover,
+	&:focus{
+		@if $background != ''{
+		background-color: darken($background, 10);
+		}
+	}
+}
+
+@mixin icobutton($color: #ffffff, $background: $orange){
+	color: $color;
+	fill: $color;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	@if $background != ''{
+	background-color: $background;
+	}
+	transition: all 0.3s ease-in-out;
+
+	& .icon{
+		display: block;
+		@include icon(18,18);
+		margin: 0 auto;
+	}
+
+	&:hover,
+	&:focus{
+		@if $background != ''{
+		background-color: darken($background, 10);
+		}
+	}
+
+	&:focus{
+		outline: 0;
+		//@include shadow();
+		background-color: rgba($background, 0.8);
+	}
+}
+
+.btn,
+.button{
+	@include button(#ffffff, $orange);
+}
+
+.button--trsp,
+.button.button--trsp{
+	@include button($orange, '');
+}
+
+.button--bluegreen,
+.button.button--bluegreen{
+	@include button(#ffffff, $blue-green);
+}
+
+
+.icobutton{
+	@include icobutton();
+
+	& .button--label{
+		@extend .sr-only;
+	}
+}
+
+
+@mixin button-profile($colorDefault: $grey-dk, $colorActive: #ffffff){
+	
+	position: relative;
+    color: $colorDefault;
+	padding: 10px 15px;
+	@include shadow();
+	background-color: $grey-lt;
+
+    &:focus{
+        outline: 0;
+	}
+	
+	&:after{
+		opacity: 0;
+		display: block;
+		position: absolute;
+		content: '';
+		right: 0;
+		bottom: -10px;
+		width: 40px;
+		height: 40px;
+		transform: translate(35%,35%);
+		background: url('./images/icon--toggle-check.svg') center center no-repeat;
+		background-size: cover;
+		transition: all 0.15s ease-in-out;
+	}
+
+    & .icon{
+        opacity: 0.6;
+        display: block;
+        margin: 0 auto;
+        fill: $colorDefault;
+        max-height: 60px;
+        margin-bottom: 10px;
+        //transition: opacity 0.3s ease-in-out;
+    }
+
+    & .icon-skipper{
+        max-width: 60px;
+    }
+
+    & .icon-proprietaire{
+        max-width: 84px;
+    }
+
+    & .button--label{
+		color: $colorDefault;
+        opacity: 0.6;
+        display: block;
+        font-family: $Montserrat;
+        @include font(13,22);
+		font-weight: 700;
+		max-width: 130px;
+		margin: 0 auto;
+        //transition: opacity 0.3s ease-in-out;
+	}
+
+	&.active{
+		
+		background-color: #ffffff;
+        
+        & .icon,
+        & .button--label{
+			color: $colorActive;
+			fill: $colorActive;
+            opacity: 1;
+		}
+		
+		&:after{
+			//width: 40px;
+			//height: 40px;
+			opacity: 1;
+			bottom: 0;
+		}
+        
+	}
+	
+}
+
+.btn--register-profile{
+	@include button-profile($grey-dk, $blue-green);
+}

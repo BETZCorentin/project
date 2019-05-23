@@ -1,0 +1,47 @@
+$gridCols: 12;
+$gridWidth: 1360px;
+$gridGutter: 20px;
+
+.row{
+	
+	position: relative;
+	width: 100%;
+	max-width: $gridWidth;
+	margin: 0 auto;
+	padding: 0;
+
+	&:after{
+		@extend .cf;
+	}
+
+	@for $i from 1 through $gridCols {
+		
+		.col-#{$i} {
+
+			float: none;
+			width: calc( 100% - (2 * #{$gridGutter} ));
+			margin: 0 $gridGutter;
+
+			@include bp(tablet){
+				float: left;
+				margin: 0 $gridGutter;
+				width: calc( #{percentage($i/$gridCols)} - (2 * #{$gridGutter} ));
+			}
+
+		}
+
+	}
+
+	@for $i from 1 through $gridCols {
+
+		.col-offset-#{$i} {
+
+			@include bp(tablet){
+				margin-left: calc( #{percentage($i/$gridCols)} + #{$gridGutter} );
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,74 @@
+/**************************************************
+// ██╗  ██╗███████╗ █████╗ ██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
+// ██║  ██║██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
+// ███████║█████╗  ███████║██║  ██║██║██╔██╗ ██║██║  ███╗███████╗
+// ██╔══██║██╔══╝  ██╔══██║██║  ██║██║██║╚██╗██║██║   ██║╚════██║
+// ██║  ██║███████╗██║  ██║██████╔╝██║██║ ╚████║╚██████╔╝███████║
+// ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+// 1. Headings & Titles mixins
+// 2. Titles
+// 3. Headings
+**************************************************/
+
+@mixin title--1(){
+    color: $black;
+    font-family: $Montserrat;
+    @include font(24, 32);
+    font-weight: 600;
+}
+
+@mixin title--2(){
+    color: $blue-navy;
+    font-family: $Montserrat;
+    @include font(24, 32);
+    font-weight: 300;
+}
+
+@mixin title--3(){
+    color: $grey;
+    font-family: $OpenSans;
+    @include font(16, 32);
+    font-weight: 700;
+}
+
+@mixin subtitle(){
+    color: $orange;
+    font-family: $Montserrat;
+    @include font(16, 22);
+    font-weight: 900;
+    padding: 0 0 15px;
+}
+
+@mixin title--1-extrabold(){
+    @include title--1();
+    font-weight: 800;
+}
+
+h1{
+    @include title--1();
+}
+
+h2{
+    @include title--2();
+    padding: 0 0 50px;
+}
+
+h3{
+    
+}
+
+h4{
+    
+}
+
+h5{
+    
+}
+
+h6{
+    
+}
+
+.section--subtitle{
+    @include subtitle();
+}
